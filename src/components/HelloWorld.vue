@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <header-nav></header-nav>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
@@ -112,8 +113,10 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import HeaderNav from "./HeaderNav.vue";
 
 export default defineComponent({
+  components: { HeaderNav },
   name: "HelloWorld",
   props: {
     msg: String,
